@@ -8,8 +8,11 @@
 
 ## Todo
 
-1. 可运行
-2. 输入指令,可以获得当前 task 仓库有多少分支
+1. 搭建项目环境
+2. 完成 PoV Ch1 MVP，即可运行，在 Python 环境中键入 `pol -branch` 反馈 branch 清单与 branch 总数
+3. 把 `main.py` 中的函数封装
+4. 删除 `main.py` 中的 Key，改用本地 config 文件。并 Revoke Git Log 中暴露的 Key
+5. 学习 argparse 并优化命令行选项
 
 ## ChangeLog
 
