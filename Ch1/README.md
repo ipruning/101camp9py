@@ -1,6 +1,6 @@
 # Ch1 笔记
 
-## Python 的项目结构
+## Python 项目结构
 
 ``` markdown
 ProjectName/
@@ -35,3 +35,11 @@ ProjectName/
 ## Argparese
 
 不要用 `argparese.py` 作为文件名
+
+## Reference
+
+- [结构化您的工程](https://pythonguidecn.readthedocs.io/zh/latest/writing/structure.html)
+
+## ChangeLog
+
+- 200604 init
