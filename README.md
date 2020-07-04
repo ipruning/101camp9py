@@ -7,6 +7,7 @@
     - [guessno](Ch0/guessno.py)
     - [Ch0 Note](Ch0/README.md)
 - [Learn Python the Hard Way](LPTHW/)
+- [Proof of Learning](PoL/)
 
 ## My Usage
 
