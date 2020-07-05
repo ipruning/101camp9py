@@ -1,13 +1,18 @@
 # README
 
-## My Summary
+## My Project
 
-- [README](README.md)
-- [Ch0](Ch0/README.md)
+- [README: 索引一切](README.md)
+- [Ch0: 学习 101camp9py Ch0](Ch0/README.md)
     - [guessno](Ch0/guessno.py)
     - [Ch0 Note](Ch0/README.md)
-- [Learn Python the Hard Way](LPTHW/)
-- [Proof of Learning](PoL/)
+- [Ch1: 学习 101camp9py Ch1](Ch1/README.md)
+    - [BaiduTranslate](Ch1/BaiduTranslate.py)
+    - [CLI](Ch1/CLI.py)
+    - [DoubanMovieRank](Ch1/DoubanMovieRank.py)
+    - [Ch1 Note](Ch0/README.md)
+- [LPTHW: 自修 Learn Python the Hard Way](LPTHW/)
+- [PoL: Proof of Learning 项目](PoL/)
 
 ## My Usage
 
