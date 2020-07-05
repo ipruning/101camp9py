@@ -32,6 +32,14 @@ ProjectName/
 - setup.py: 安装、部署、打包脚本，可用 setuptools 管理
 - requirements.txt: 存放依赖的外部 Python 包
 
+```bash
+# 生成requirements.txt文件
+pip freeze > requirements.txt
+
+# 安装requirements.txt依赖
+pip install -r requirements.txt
+```
+
 ## Argparese
 
 不要用 `argparese.py` 作为文件名
