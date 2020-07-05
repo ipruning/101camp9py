@@ -40,6 +40,76 @@ while noGuess: # 因为 noGuess 为一，表达式为真，所以不断循环
 - 检索式构建错误，应该从官方文档出发检索，即使用 `raw_input site:docs.python.org` 在第三条就能看到答案 ![检索式](https://i.loli.net/2019/07/18/5d3043f5b09e244249.png)
 - 正确的资料搜索路径，先官网 -> 再英文 -> 最后中文 -> 实在没法儿了, 用 baidu 娱乐一下, 再回到官网。
 
+## Python 的字符串
+
+- 单引号（`'`）双引号（`"`）
+
+    你可以用单引号、ㅔ指示字符串，就如同 `'Quote me on this'` 这样。所有的空白，即空格和制表符都照原样保留。
+
+    在双引号中的字符串与单引号中的字符串的使用完全相同，例如 `"What's your name?"`。
+
+- 三引号（`'''` 或 `"""`）
+
+    利用三引号，你可以指示一个多行的字符串。你可以在三引号中自由的使用单引号和双引号。
+
+## Python 的转义符
+
+`\`
+
+## Python 与 Unicode
+
+Python 允许你处理 Unicode 文本——只需要在字符串前加上前缀 `u` 或 `U`。例如 `u"This is a Unicode string."`。
+
+## Python if while 案例
+
+``` python
+#!/usr/bin/python
+# Filename: while.py
+
+number = 23
+running = True
+
+while running:
+    guess = int(raw_input('Enter an integer : '))
+
+    if guess == number:
+        print 'Congratulations, you guessed it.' 
+        running = False # this causes the while loop to stop
+    elif guess < number:
+        print 'No, it is a little higher than that' 
+    else:
+        print 'No, it is a little lower than that' 
+else:
+    print 'The while loop is over.' 
+    # Do anything else you want to do here
+
+print 'Done'
+```
+
+## Python for 案例
+
+``` python
+#!/usr/bin/python
+# Filename: for.py
+
+for i in range(1, 5):
+    print i
+else:
+    print 'The for loop is over'
+```
+
+## Python break
+
+`break` 语句是用来终止循环语句的。
+
+## Python continue
+
+用于忽略组块中剩余的语句。
+
+## Python 函数
+
+函数通过 `def` 关键字定义。`def` 关键字后跟一个函数的标识符名称，然后跟一对圆括号。圆括号之中可以包括一些变量名，该行以冒号结尾。
+
 ## ChangeLog
 
 - 200625 init
