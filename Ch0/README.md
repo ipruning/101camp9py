@@ -1,6 +1,6 @@
-# Ch0 笔记
+# Ch0: Git 是 MVP 保障
 
-## Git
+## Git 命令
 
 - `git clone https://gitlab.com/101camp/9py/tasks.git --branch your_branch --single-branch` # Clone single branch
 - `git checkout old_branch` # Rename branch locally
@@ -8,7 +8,7 @@
 - `git push origin :old_branch` # Delete the old branch
 - `git push --set-upstream origin new_branch` # Push the new branch, set local branch to track the new remote
 
-## guessno 任务
+## guessno 开发任务
 
 - 修正 Print 格式后试运行，报错 `NameError: name 'raw_input' is not defined`
 - 推测可能函数用错，构造检索式 `Python input`
@@ -112,4 +112,5 @@ else:
 
 ## ChangeLog
 
+- 200705 fix 补充 Python 笔记
 - 200625 init

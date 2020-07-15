@@ -1,6 +1,6 @@
 # LPTHW logging
 
-> Learnning Python The Hard Way
+- [Learnning Python The Hard Way](https://www.bookstack.cn/read/LearnPython3TheHardWay/spilt.1.learn-py3.md)
 
 ## usage
 

@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 
 '''Printing, Printing, Printing
+
 多行字符串的两种方法
+
 '''
 
 months = "Jan\nFeb\nMar\nApr\nMay\nJun"

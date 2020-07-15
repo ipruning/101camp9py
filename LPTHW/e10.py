@@ -19,7 +19,6 @@
 # \ooo 值为八进制值 ooo 的字符
 # \xhh 值为十六进制值 hh 的字符
 
-
 tabby_cat = "\tI'm tabbed in."
 persian_cat = "I'm split\non a line."
 backslash_cat = "I'm \\ a \\ cat."

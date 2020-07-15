@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 
 '''More Variables and Printing
+
 print 字符串之前用 f 外加 {}
+
 '''
 
 my_name = 'Zed A. Shaw'
