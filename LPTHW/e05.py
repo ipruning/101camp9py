@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 '''More Variables and Printing
 
 print 字符串之前用 f 外加 {}
@@ -25,4 +24,4 @@ total = my_age + my_height + my_weight
 print(f"If I add {my_age}, {my_height}, and {my_weight} I get {total}.")
 
 my_height_cm = 2.54 * my_height
-my_weight_kg = round(0.45 * my_weight) # 函数"round()"的作用是给数值四舍五入成整数。
+my_weight_kg = round(0.45 * my_weight)  # 函数"round()"的作用是给数值四舍五入成整数。

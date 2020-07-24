@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 '''Numbers and Math
 
 + plus 加号 
@@ -13,7 +12,6 @@
 >= greater-than-equal 大于等于号
 
 '''
-
 '''数字类型
 
 - 整数
@@ -22,8 +20,6 @@
 - 复数
 
 '''
-
-
 '''运算符
 
 - `**`：幂——返回 x 的 y 次幂
@@ -44,7 +40,7 @@
 
 '''
 
-print("Test", int(20/3))
-print("Test", 20.0/3)
+print("Test", int(20 / 3))
+print("Test", 20.0 / 3)
 print(3 + 2 < 7 - 1.9)
 print(3 + 2 < int(7 - 1.9))

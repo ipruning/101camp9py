@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 '''Strings and Text
 
 double-quotes or single-quotes
@@ -17,4 +16,4 @@ print(joke_evaluation.format(hilarious))
 
 w = "This is the left side of..."
 e = "a string with a right side."
-print(w + e) # + notation can combine string
+print(w + e)  # + notation can combine string

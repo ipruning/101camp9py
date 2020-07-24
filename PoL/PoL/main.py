@@ -2,8 +2,7 @@ import argparse
 import requests
 import json
 
-
-with open("../docs/default.json",'r') as load_config:
+with open("../docs/default.json", 'r') as load_config:
     config = json.load(load_config)
     print(config)
     print(config['gitlab_tokens'])
@@ -11,7 +10,7 @@ with open("../docs/default.json",'r') as load_config:
 
 def get_branch():
     url = 'https://gitlab.com/api/v4/projects/18907382/repository/branches?private_token=' \
-          'Gh9kuLv9dc3_aYsjoT-6&page=1&per_page=50'
+        'Gh9kuLv9dc3_aYsjoT-6&page=1&per_page=50'
     result = requests.get(url)
     get_branch_data = result.json()
     get_branch_list = []

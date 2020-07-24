@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
-
 '''Variables and Names
 
 '''
 
 cars = 100
-space_in_a_car = 4.0 # 4.0 is a floating number
+space_in_a_car = 4.0  # 4.0 is a floating number
 drivers = 30
 passengers = 90
 cars_not_driven = cars - drivers

@@ -3,12 +3,8 @@ import json
 
 url = 'https://fanyi.baidu.com/sug'
 kw = input('Translate: ')
-kw = {
-    'kw': kw
-}
-header = {
-    'User-Agent': 'Chrome/83.0.4103.116'
-}
+kw = {'kw': kw}
+header = {'User-Agent': 'Chrome/83.0.4103.116'}
 response = requests.post(url=url, data=kw, headers=header)
 response.raise_for_status()
 response.encoding = response.apparent_encoding
