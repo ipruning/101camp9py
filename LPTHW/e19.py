@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-
 '''函数与变量
 传入函数的变量是局部变量
 '''
+
 
 def cheese_and_crackers(cheese_count, boxes_of_crackers):
     print(f"You have {cheese_count} cheeses!")
