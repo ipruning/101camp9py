@@ -32,8 +32,7 @@ class QueryGraphQL(object):
     def save_query(self):  # 保存查询结果
         with open('./docs/' + self.name + '.json', 'w') as json_file:
             # json.dump(result, json_result)
-            json.dump(self.run_query(),
-                      json_file, ensure_ascii=False)
+            json.dump(self.run_query(), json_file, ensure_ascii=False)
 
 
 class QueryREST(object):
@@ -47,8 +46,10 @@ class QueryREST(object):
         self.payload = {}
 
     def run_query(self):
-        response = requests.request(
-            "GET", self.url, headers=self.headers, data=self.payload)
+        response = requests.request("GET",
+                                    self.url,
+                                    headers=self.headers,
+                                    data=self.payload)
         if response.status_code == 200:
             return response.json()
         else:

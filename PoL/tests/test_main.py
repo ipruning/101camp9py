@@ -11,12 +11,14 @@ def test_QueryGraphQL():
     }
     """
     issue = api.QueryGraphQL("101camp9py-id", query, {})
-    assert_equal(issue.run_query()['data']['project']['id'], "gid://gitlab/Project/13020942"")
+    assert_equal(issue.run_query()['data']['project']['id'],
+                 "gid://gitlab/Project/13020942")
 
 
 def test_QueryREST():
     branch = api.QueryREST(
-        "101camp9py-branch", "https://gitlab.com/api/v4/projects/18907382/repository/branches")
+        "101camp9py-branch",
+        "https://gitlab.com/api/v4/projects/18907382/repository/branches")
     branch.save_query()
     branch_list = []
     for item in branch.run_query():

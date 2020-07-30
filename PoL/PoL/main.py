@@ -4,7 +4,8 @@ import requests
 # Ch1
 
 branch = api.QueryREST(
-    "101camp9py-branch", "https://gitlab.com/api/v4/projects/18907382/repository/branches")
+    "101camp9py-branch",
+    "https://gitlab.com/api/v4/projects/18907382/repository/branches")
 branch.save_query()
 
 branch_list = []
