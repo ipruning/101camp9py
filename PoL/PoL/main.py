@@ -1,44 +1,57 @@
-import argparse
+from pol import api
 import requests
-import json
 
-with open("../docs/default.json", 'r') as load_config:
-    config = json.load(load_config)
-    print(config)
-    print(config['gitlab_tokens'])
+# Ch1
 
+branch = api.QueryREST(
+    "101camp9py-branch", "https://gitlab.com/api/v4/projects/18907382/repository/branches")
+branch.save_query()
 
-def get_branch():
-    url = 'https://gitlab.com/api/v4/projects/18907382/repository/branches?private_token=' \
-        'Gh9kuLv9dc3_aYsjoT-6&page=1&per_page=50'
-    result = requests.get(url)
-    get_branch_data = result.json()
-    get_branch_list = []
-    for branch in get_branch_data:
-        name = branch['name']
-        if name != 'master':
-            get_branch_list.append(name)
-    return get_branch_list
-
-
-# cli = input()
-# while cli != 'pol -exit':
-#     if cli == 'pol -branch':
-#         branch_data = get_branch()
-#         for branch_name in branch_data:
-#             print(branch_name)
-#         print('\nThe number of branches is {}.'.format(len(branch_data)))
-#         cli = input()
-# input('logout')
-# exit()
-
-parser = argparse.ArgumentParser(description='Proof of Learning')
-parser.add_argument('API', metavar='N', type=int, help='API Key')
-
-args = parser.parse_args()
-print(args.API)
-
-branch_data = get_branch()
-for branch_name in branch_data:
+branch_list = []
+for item in branch.run_query():
+    name = item['name']
+    if name != 'master':
+        branch_list.append(name)
+for branch_name in branch_list:
     print(branch_name)
-print('\nThe number of branches is {}.'.format(len(branch_data)))
+print('\nThe number of branches is {}.'.format(len(branch_list)))
+
+# Ch2
+
+query = """
+{
+  project(fullPath: "101camp/9py/tasks") {
+    id
+    name
+    description
+    issues(createdBefore: "2020-07-12T04:42:56Z") {
+      nodes {
+        title
+        id
+        iid
+        createdAt
+        userNotesCount
+        author {
+          id
+          name
+        }
+        notes{
+          nodes {
+            id
+            author {
+              id
+              name
+            }
+            createdAt
+            body
+          }
+        }
+      }
+    }
+  }
+}
+"""
+
+issue = api.QueryGraphQL("101camp9py-issue-001-100", query, {})
+issue.save_query()
+# print(type(issue.run_query()))
