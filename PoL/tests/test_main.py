@@ -2,9 +2,6 @@ from nose.tools import *
 from pol import api
 
 
-# nosetests
-
-
 def test_QueryGraphQL():
     query = """
     {
