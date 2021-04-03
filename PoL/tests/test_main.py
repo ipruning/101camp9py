@@ -26,3 +26,4 @@ def test_QueryREST():
         if name != 'master':
             branch_list.append(name)
     assert_equal(len(branch_list), 20)
+    # assert_equal(len(branch_list), 20)
