@@ -11,6 +11,15 @@
 - 请在 `./configs/default.json` 中填写私有 GitLab API
 - 将命令行切换到 PoL 根目录输入 `export PYTHONPATH=.` `nosetests` 单元测试
 
+## 单元测试
+
+- 执行 nosetests 命令
+- 使用 [laike9m/Cyberbrain: Python debugging, redefined.](https://github.com/laike9m/Cyberbrain)
+
+## 单元测试 VS Code
+
+- `Command + Shift + P` `Python: Discover Tests`
+
 ## 操作指南
 
 - Todo
