@@ -1,6 +1,23 @@
 import requests
+import os
+import sys
+from pathlib import Path
 
-from . import api
+print("Running" if __name__ == "__main__" else "Importing", Path(__file__).resolve())
+# print(os.path.abspath("."))
+
+
+# if __name__ == "__main__":
+#     import api
+# else:
+#     from . import api
+
+
+try:
+    from . import api
+except ImportError:
+    print("ImportError")
+    import api
 
 
 def ch1():

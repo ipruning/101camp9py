@@ -2,11 +2,15 @@ import requests
 import json
 import os
 
+from pathlib import Path
+
+print("Running" if __name__ == "__main__" else "Importing", Path(__file__).resolve())
+
 
 def get_path():
     global package_path  # https://www.w3schools.com/python/python_variables_global.asp
     package_path = os.path.realpath(__file__)[:-11]
-    print(package_path)
+    # print("package_path: ", package_path)
 
 
 get_path()
@@ -43,7 +47,7 @@ class QueryGraphQL(object):
         print(self.run_query())
 
     def save_query(self):  # 保存查询结果
-        with open("./docs/" + self.name + ".json", "w") as json_file:
+        with open(package_path + "/docs/" + self.name + ".json", "w") as json_file:
             # json.dump(result, json_result)
             json.dump(self.run_query(), json_file, ensure_ascii=False)
 

@@ -2,10 +2,12 @@ import argparse
 import requests
 import json
 
-
+from pathlib import Path
 from . import api
 
-get_path()
+print("Running" if __name__ == "__main__" else "Importing", Path(__file__).resolve())
+
+api.get_path()
 config_name = "Alex.json"
 config_path = package_path + "/configs/" + config_name
 
