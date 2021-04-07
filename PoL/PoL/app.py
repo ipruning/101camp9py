@@ -4,19 +4,24 @@ import sys
 from pathlib import Path
 
 print("Running" if __name__ == "__main__" else "Importing", Path(__file__).resolve())
-# print(os.path.abspath("."))
 
 # if __name__ == "__main__":
 #     import api
 # else:
 #     from . import api
 
-try:
-    from pol import api
-except ImportError:
-    print("ImportError")
-    print("Try import api")
-    import api
+# try:
+#     from pol import api
+# except ImportError:
+#     print("ImportError")
+#     print("Try import api")
+#     import api
+
+current_folder = Path(__file__).absolute().parent
+father_folder = str(current_folder.parent)
+sys.path.append(father_folder)
+
+from pol import api
 
 
 def ch1():
