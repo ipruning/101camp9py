@@ -1,5 +1,8 @@
 import pol
+import sys
 
+
+print("sys.path: ", sys.path)
 print("pol     : ", pol)
 print("pol path: ", pol.__path__)
 print("dir     : ", dir())

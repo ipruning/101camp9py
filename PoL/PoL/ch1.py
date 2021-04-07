@@ -1,9 +1,9 @@
 import argparse
 import requests
 import json
-
 from pathlib import Path
-from . import api
+
+from pol import api
 
 print("Running" if __name__ == "__main__" else "Importing", Path(__file__).resolve())
 

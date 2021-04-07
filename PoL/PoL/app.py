@@ -6,17 +6,16 @@ from pathlib import Path
 print("Running" if __name__ == "__main__" else "Importing", Path(__file__).resolve())
 # print(os.path.abspath("."))
 
-
 # if __name__ == "__main__":
 #     import api
 # else:
 #     from . import api
 
-
 try:
-    from . import api
+    from pol import api
 except ImportError:
     print("ImportError")
+    print("Try import api")
     import api
 
 

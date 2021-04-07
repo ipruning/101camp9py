@@ -1,8 +1,8 @@
 import os
 from pathlib import Path
 
-from . import api
-from . import app
+from pol import api
+from pol import app
 
 print("Running" if __name__ == "__main__" else "Importing", Path(__file__).resolve())
 # print(os.path.abspath("."))
