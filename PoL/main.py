@@ -1,10 +1,12 @@
 import pol
 import sys
 
+print("-------------------------------------------------------------------------------")
+print("sys.path    : ", sys.path)
+print("-------------------------------------------------------------------------------")
+print("pol         : ", pol)
+print("pol.__path__: ", pol.__path__)
+print("-------------------------------------------------------------------------------")
+print("dir         : ", dir())
 
-print("sys.path: ", sys.path)
-print("pol     : ", pol)
-print("pol path: ", pol.__path__)
-print("dir     : ", dir())
-
-pol.app.ch1()  # 调用某个实例
+pol.app.ch1()
