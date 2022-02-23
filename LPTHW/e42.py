@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-'''Is-A, Has-A, 对象和类
+'''Is-A, Has-A，对象和类
 '''
 
 ## Animal is-a object (yes, sort of confusing) look at the extra credit

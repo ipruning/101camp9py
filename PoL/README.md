@@ -1,6 +1,6 @@
 # Proof of Learning
 
-- 工程名: 学习通证
+- 工程名：学习通证
 - 英文名: Proof of Learning
 - 缩写名: PoL
 

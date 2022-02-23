@@ -34,10 +34,10 @@ ProjectName/
 - README.md：Github 创始人 Tom Preston-Werner 发明的 README 文件驱动协同方法论，更详细的描述参见 [Readme Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)。
 
 ```bash
-# 生成requirements.txt文件
+# 生成 requirements.txt 文件
 pip freeze > requirements.txt
 
-# 安装requirements.txt依赖
+# 安装 requirements.txt 依赖
 pip install -r requirements.txt
 ```
 

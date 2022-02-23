@@ -76,7 +76,7 @@ GraphQL API：
 REST API
 
 - Method 为 GET
-- URL 选 https://gitlab.com/api/v4/projects/这里填写RepoID/issues
+- URL 选 https://gitlab.com/api/v4/projects/这里填写 RepoID/issues
 - Authorization 选 Bearer Token
 - Body 无
 
