@@ -9,9 +9,7 @@ script, encoding, error = sys.argv
 
 
 def main(language_file, encoding, errors):
-    line = language_file.readline() # 从文件读取一行
-
-    if line: # 用于判断是否到达文件末，到到最后一行，readline 会返回空字符串
+    if line := language_file.readline():
         print_line(line, encoding, errors)
         return main(language_file, encoding, errors) # 递归
 

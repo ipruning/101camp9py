@@ -2,6 +2,7 @@
 '''做决定
 '''
 
+
 print("""You enter a dark room with two doors.
 Do you go through door #1 or door #2?""")
 
@@ -31,12 +32,10 @@ elif door == "2":
 
     insanity = input("> ")
 
-    if insanity == "1" or insanity == "2":
+    if insanity in ["1", "2"]:
         print("Your body survives powered by a mind of jello.")
-        print("Good job!")
     else:
         print("The insanity rots your eyes into a pool of muck.")
-        print("Good job!")
-
+    print("Good job!")
 else:
     print("You stumble aroud and fall on a knife and die. Good job!")

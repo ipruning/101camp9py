@@ -22,8 +22,7 @@
 
 def break_words(stuff):
     """This function will break up words for us."""  # help(ex25) 及 help(ex25.break_words) 会展示
-    words = stuff.split(' ')
-    return words
+    return stuff.split(' ')
 
 
 def sort_words(words):

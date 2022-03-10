@@ -5,6 +5,7 @@
 我能用列表做什么？ 可以用于任何有序排列的东西，同时你只需要用数字索引来查找它们。
 '''
 
+
 # 新建字典
 
 states = {
@@ -15,12 +16,14 @@ states = {
     'Michigan': 'MI'
 }
 
-cities = {'CA': 'San Francisco', 'MI': 'Detroit', 'FL': 'Jacksonville'}
+cities = {
+    'CA': 'San Francisco',
+    'MI': 'Detroit',
+    'FL': 'Jacksonville',
+    'NY': 'New York',
+    'OR': 'Portland',
+}
 
-# 增补字典
-
-cities['NY'] = 'New York'
-cities['OR'] = 'Portland'
 
 # 打印字典
 

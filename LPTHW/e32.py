@@ -2,6 +2,7 @@
 '''循环和列表
 '''
 
+
 the_count = [1, 2, 3, 4,5 ] # list
 fruits = ['apples', 'oranges', 'pears', 'apricots']
 change = [1, 'pennies', 2, 'dimes', 3 , 'quarters']
@@ -17,7 +18,7 @@ for i in change:
 
 elements = [] # 新建 List
 
-for i in range(0, 6):
+for i in range(6):
     print(f"Adding {i} to the list.")
     elements.append(i)
 

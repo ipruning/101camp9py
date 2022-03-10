@@ -9,7 +9,7 @@ print("Running" if __name__ == "__main__" else "Importing", Path(__file__).resol
 
 api.get_path()
 config_name = "Alex.json"
-config_path = package_path + "/configs/" + config_name
+config_path = f'{package_path}/configs/{config_name}'
 
 with open(config_path, "r") as load_config:
     config = json.load(load_config)

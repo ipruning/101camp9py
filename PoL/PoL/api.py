@@ -14,7 +14,7 @@ def get_path():
 
 get_path()
 config_name = "Alex.json"
-config_path = package_path + "/configs/" + config_name
+config_path = f'{package_path}/configs/{config_name}'
 
 
 class QueryGraphQL(object):
@@ -46,7 +46,7 @@ class QueryGraphQL(object):
         print(self.run_query())
 
     def save_query(self):  # 保存查询结果
-        with open(package_path + "/docs/" + self.name + ".json", "w") as json_file:
+        with open(f'{package_path}/docs/{self.name}.json', "w") as json_file:
             # json.dump(result, json_result)
             json.dump(self.run_query(), json_file, ensure_ascii=False)
 
@@ -75,6 +75,6 @@ class QueryREST(object):
             )
 
     def save_query(self):
-        with open(package_path + "/docs/" + self.name + ".json", "w") as json_file:
+        with open(f'{package_path}/docs/{self.name}.json', "w") as json_file:
             # json.dump(result, json_result)
             json.dump(self.run_query(), json_file, ensure_ascii=False)
