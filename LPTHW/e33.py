@@ -11,7 +11,7 @@ def print_number_list(max):
         print(f"At the top i is {i}")
         numbers.append(i)
 
-        i = i + 1  #累加器
+        i += 1
         print("Numbers now: ", numbers)
         print(f"At the bottom i is {i}")
 

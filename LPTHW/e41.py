@@ -23,12 +23,10 @@ foo.M(J) 从 foo 那里获取 M 函数，并用 self 和 J 参数来调用它。
 foo.K = Q 从 foo 那里获取 K 属性，并设它为 Q。 (“From foo, get the K attribute, and set it to Q.”)
 '''
 
+
 import random
 from urllib.request import urlopen
 import sys
-
-WORD_URL = "http://learncodethehardway.org/words.txt"
-WORDS = []
 
 PHRASES = {
     "class %%%(%%%):": "Make a class named %%% that is-a %%%.",
@@ -42,14 +40,11 @@ PHRASES = {
     "***.*** = '***'": "From *** get the *** attribute and set it to '***'."
 }
 
-# do they want to drill phrases first
-PHRASE_FIRST = False
-if len(sys.argv) == 2 and sys.argv[1] == "english":
-    PHRASE_FIRST = True
-
-# load up the words from the website
-for word in urlopen(WORD_URL).readlines():
-    WORDS.append(word.strip().decode("utf-8"))
+PHRASE_FIRST = len(sys.argv) == 2 and sys.argv[1] == "english"
+WORD_URL = "http://learncodethehardway.org/words.txt"
+WORDS = [
+    word.strip().decode("utf-8") for word in urlopen(WORD_URL).readlines()
+]
 
 
 def convert(snippet, phrase):
@@ -60,7 +55,7 @@ def convert(snippet, phrase):
     results = []
     param_names = []
 
-    for i in range(0, snippet.count("@@@")):
+    for _ in range(snippet.count("@@@")):
         param_count = random.randint(1, 3)
         param_names.append(', '.join(random.sample(WORDS, param_count)))
 
